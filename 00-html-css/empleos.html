@@ -7,12 +7,12 @@
     <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
     <title>Document</title>
     <link rel="stylesheet" href="./global-styles.css" />
-    <link rel="stylesheet" href="./search-result.css" />
+    <link rel="stylesheet" href="./empleos.css" />
 </head>
 
 <body>
     <header>
-        <div class="principal-header"> 
+        <div class="principal-header">
             <div>
                 <div>
                     <svg width="48" height="48" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
                             d="M12.08 24 4 19.248 9.955 8.752l8.085 4.744L18.045 4h11.91l.005 9.496 8.085-4.744L44 19.248 35.92 24 44 28.752l-5.955 10.496-8.085-4.744L29.955 44h-11.91l-.005-9.496-8.085 4.744L4 28.752z"
                             fill="currentColor" fill-rule="evenodd" />
                     </svg>
-    
+
                     <h1>DevJobs</h1>
                 </div>
                 <nav>
@@ -61,61 +61,69 @@
 
                         <input type="search" placeholder="Busca trabajo, empresas o habilidades">
                     </div>
-                    <!-- select -->
-                    <div class="custom-select-group">
-                        <div class="custom-select">
-                            <select name="technology" id="technology">
-                                <option disabled selected> Tecnologia </option>
-                                <option value="javascript">JavaScript</option>
-                                <option value="python">Python</option>
-                                <option value="java">Java</option>
-                                <option value="react">React</option>
-                                <option value="nodejs">Node.js</option>
-                            </select>
-                            <span class="icon">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                            </span>
-                        </div>
-                        <div class="custom-select">
-                            <select name="location" id="location">
-                                <option disabled selected>Ubicación</option>
-                                <option value="remoto">Remoto</option>
-                                <option value="cdmx">Ciudad</option>
-                                <option value="guadalajara">Guadalajara</option>
-                                <option value="monterrey">Monterrey</option>
-                                <option value="barcelona">Barcelona</option>
-                            </select>
-                            <span class="icon">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                            </span>
-                        </div>
-                        <div class="custom-select">
-                            <select name="tipo-contrato" id="tipo-contrato">
-                                <option disabled selected>Tipo de contrato</option>
-                                <option value="full-time">Tiempo Completo</option>
-                                <option value="part-time">Medio Tiempo</option>
-                                <option value="contract">Contracto</option>
-                            </select>
-                            <span class="icon">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                            </span>
-                        </div>
-                        <div class="custom-select">
-                            <select name="level-of-experience" id="experience">
-                                <option disabled selected>Nivel de experiencia</option>
-                                <option value="junior">Junior</option>
-                                <option value="mid">Mid-level</option>
-                                <option value="senior">Senior</option>
-                                <option value="lead">Lead</option>
-                            </select>
-                            <span class="icon">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                            </span>
-                        </div>
-                    </div>
-
+                    
                 </form>
             </search>
+            <!-- select -->
+            <div class="custom-select-group">
+                <div class="custom-select">
+                    <select name="technology" id="technology">
+                        <button>
+                            <selectedcontent></selectedcontent>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                        </button>
+                        <option disabled selected> Tecnologia </option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="react">React</option>
+                        <option value="nodejs">Node.js</option>
+                    </select>
+
+                </div>
+                <div class="custom-select">
+                    <select name="location" id="location">
+                        <button>
+                            <selectedcontent></selectedcontent>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                        </button>
+                        <option disabled selected>Ubicación</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="cdmx">Ciudad de México</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="monterrey">Monterrey</option>
+                        <option value="barcelona">Barcelona</option>
+                    </select>
+
+                </div>
+                <div class="custom-select">
+                    <select name="tipo-contrato" id="tipo-contrato">
+                        <button>
+                            <selectedcontent></selectedcontent>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                        </button>
+                        <option disabled selected>Tipo de contrato</option>
+                        <option value="full-time">Tiempo Completo</option>
+                        <option value="part-time">Medio Tiempo</option>
+                        <option value="contract">Contracto</option>
+                    </select>
+
+                </div>
+                <div class="custom-select">
+                    <select name="level-of-experience" id="experience">
+                        <button>
+                            <selectedcontent></selectedcontent>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                        </button>
+                        <option disabled selected>Nivel de experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid">Mid-level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead</option>
+                    </select>
+
+                </div>
+            </div>
 
         </section>
         <!--section of results -->
@@ -184,27 +192,25 @@
                 </article>
             </div>
         </section>
-        <footer>
-            <ul>
-                <li href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M15 6l-6 6l6 6" />
-                    </svg></li>
-                <li href="#" >1</li>
-                <li href="#" >2</li>
-                <li href="#" >3</li>
-                <li href="#" >4</li>
-                <li href="#" >5</li>
-                <li href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M9 6l6 6l-6 6" />
-                    </svg></li>
-            </ul>
-        </footer>
+        <nav>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 6l-6 6l6 6" />
+                </svg></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" />
+                </svg></a>
+        </nav>
     </main>
 
     <footer>
