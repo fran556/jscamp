@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global-styles.css" />
+    <link rel="stylesheet" href="./search-result.css" />
+</head>
+
+<body>
+    <header>
+        <div class="principal-header"> 
+            <div>
+                <div>
+                    <svg width="48" height="48" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M12.08 24 4 19.248 9.955 8.752l8.085 4.744L18.045 4h11.91l.005 9.496 8.085-4.744L44 19.248 35.92 24 44 28.752l-5.955 10.496-8.085-4.744L29.955 44h-11.91l-.005-9.496-8.085 4.744L4 28.752z"
+                            fill="currentColor" fill-rule="evenodd" />
+                    </svg>
+    
+                    <h1>DevJobs</h1>
+                </div>
+                <nav>
+                    <a href="./index.html">Inicio</a>
+                    <a href="">Empleos</a>
+                    <a href="">Empresa</a>
+                    <a href="">Salarios</a>
+                </nav>
+            </div>
+            <div>
+                <a href="">subir CV</a>
+                <a href=""><img src="./avatar.jpg" alt="avatar"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <header>
+
+                <h1>Encuentra tu próximo trabajo</h1>
+
+                <p>Explora miles de oportunidades en el sector tecnólogico.</p>
+            </header>
+
+
+            <search>
+                <form role="search" action="/buscar" method="get">
+                    <div class="search-input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+
+                        <input type="search" placeholder="Busca trabajo, empresas o habilidades">
+                    </div>
+                    <!-- select -->
+                    <div class="custom-select-group">
+                        <div class="custom-select">
+                            <select name="technology" id="technology">
+                                <option disabled selected> Tecnologia </option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="react">React</option>
+                                <option value="nodejs">Node.js</option>
+                            </select>
+                            <span class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                            </span>
+                        </div>
+                        <div class="custom-select">
+                            <select name="location" id="location">
+                                <option disabled selected>Ubicación</option>
+                                <option value="remoto">Remoto</option>
+                                <option value="cdmx">Ciudad</option>
+                                <option value="guadalajara">Guadalajara</option>
+                                <option value="monterrey">Monterrey</option>
+                                <option value="barcelona">Barcelona</option>
+                            </select>
+                            <span class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                            </span>
+                        </div>
+                        <div class="custom-select">
+                            <select name="tipo-contrato" id="tipo-contrato">
+                                <option disabled selected>Tipo de contrato</option>
+                                <option value="full-time">Tiempo Completo</option>
+                                <option value="part-time">Medio Tiempo</option>
+                                <option value="contract">Contracto</option>
+                            </select>
+                            <span class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                            </span>
+                        </div>
+                        <div class="custom-select">
+                            <select name="level-of-experience" id="experience">
+                                <option disabled selected>Nivel de experiencia</option>
+                                <option value="junior">Junior</option>
+                                <option value="mid">Mid-level</option>
+                                <option value="senior">Senior</option>
+                                <option value="lead">Lead</option>
+                            </select>
+                            <span class="icon">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                </form>
+            </search>
+
+        </section>
+        <!--section of results -->
+        <section>
+            <h2>Resultados de búsqueda</h2>
+            <div>
+                <article>
+                    <div>
+                        <div>
+                            <h3>Ingeniero de software</h3>
+                            <p>Tech Solutions Inc. | Remoto</p>
+                        </div>
+                        <p>Buscamos un ingeniero de software con experiencia en desarollo web y conocimientos en
+                            JavaScript,
+                            React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener habilidades
+                            de
+                            comunicación.</p>
+                    </div>
+                    <button>Aplicar</button>
+
+
+                </article>
+                <article>
+                    <div>
+                        <div>
+                            <h3>Analista de Datos</h3>
+                            <p>Data Driven Co. | Ciudad de México</p>
+                        </div>
+                        <p>Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de
+                            datos y herramientas de
+                            visualización. Se requiere conocimiento en SQL, Python y R.</p>
+                    </div>
+
+                    <button>Aplicar</button>
+
+                </article>
+                <article>
+                    <div>
+                        <div>
+                            <h3>Desarrollador de Aplicaciones Móviles</h3>
+                            <p>Mobile Apps Ltd. | Guadalajara</p>
+                        </div>
+                        <p>Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. EI
+                            candidato debe tener conocimientos en
+                            Swift, Kotlin y el desarrollo de interfaces de usuario.</p>
+                    </div>
+                    <button>Aplicar</button>
+
+
+                </article>
+                <article>
+                    <div>
+                        <div>
+                            <h3>Ingeniero de DevOps</h3>
+                            <p>Cloud Services SA | Remoto</p>
+                        </div>
+                        <p>Buscamos un ingeniero de software con experiencia en desarollo web y conocimientos en
+                            JavaScript,
+                            React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener habilidades
+                            de
+                            comunicación.</p>
+                    </div>
+                    <button>Aplicar</button>
+
+
+                </article>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg></li>
+                <li href="#" >1</li>
+                <li href="#" >2</li>
+                <li href="#" >3</li>
+                <li href="#" >4</li>
+                <li href="#" >5</li>
+                <li href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg></li>
+            </ul>
+        </footer>
+    </main>
+
+    <footer>
+        <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+
+</body>
+
+</html>
