@@ -1,16 +1,12 @@
-nav a:nth-child(2){
-    color: var(--primary-light);
-     pointer-events: none;
-}
+
+/* buscador del nav */
 .nav-search {
 
-    /* width: fit-content; */
 
     form {
-        /* width: 100%; */
+
         gap: 0.5rem;
 
-        /*input*/
 
         .nav-search-input {
             display: flex;
@@ -29,7 +25,8 @@ nav a:nth-child(2){
                 font-size: 1rem;
                 font-family: inherit;
             }
-            svg{
+
+            svg {
                 color: var(--text-muted);
             }
 
@@ -40,7 +37,9 @@ nav a:nth-child(2){
     }
 
 }
-.nav-action-container{
+
+/* avatar y buton del nav */
+.nav-action-container {
     a:nth-child(2) {
         background-color: var(--primary-dark);
         padding: 5px 15px;
@@ -62,4 +61,126 @@ nav a:nth-child(2){
     height: 42px;
     width: 42px;
     border-radius: 50%;
+}
+
+/* seccion de breadcrumb */
+main>section:nth-child(1) {
+
+    padding: 1rem 0;
+
+
+
+    >.breadcrumb a {
+        color: var(--text-muted);
+        text-decoration: none;
+        
+
+        &:not(:last-child)::after {
+            content: "/";
+            padding: 0 .5rem;
+        }
+
+        &:hover {
+            /* text-decoration: underline; */
+            color: var(--primary-light);
+        }
+
+        &:last-child {
+            color: var(--text-secundary);
+        }
+    }
+}
+
+/* seccion de la informacion del trabajo */
+main>section:nth-child(2) {
+    max-width: 1210px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+
+    .specialty {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+
+            border: none;
+
+            h1 {
+                font-weight: 600;
+            }
+
+            p {
+                color: var(--text-muted);
+            }
+        }
+    }
+
+    .info-job {
+        margin-bottom: 1.5rem;
+
+        & h2 {
+            margin: 0rem 0 1rem 0;
+            font-weight: 600;
+
+        }
+
+        & p {
+            color: var(--text-muted);
+        }
+    }
+
+
+}
+
+
+
+/* lista de responsabilidades y requisitos */
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 0 0 1rem 0;
+
+    svg {
+        color: var(--primary-light);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+main>section:nth-child(2),
+main>section:nth-child(3){
+    button {
+        background-color: var(--primary-light);
+        height: 40px;
+        color: var(--text-primary);
+        border: none;
+        border-radius: 6px;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 7px 24px rgba(0, 123, 255, 0.3);
+        transition: background-color 0.2s;
+        
+        &:hover,
+        &:focus {
+            background-color: var(--primary-hover);
+            outline: none;
+        }
+    }
+    
+}
+main>section:nth-child(3){
+
+    max-width: 1210px;
+    width: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+
 }
