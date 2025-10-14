@@ -49,7 +49,7 @@
 
 
             <search>
-                <form role="search" action="/buscar" method="get">
+                <form role="search">
                     <div class="search-input">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -62,68 +62,72 @@
                         <input type="search" placeholder="Busca trabajo, empresas o habilidades">
                     </div>
                     
+                    <div class="custom-select-group">
+                        <div class="custom-select">
+                            <select name="technology" id="technology">
+                                <button>
+                                    <selectedcontent></selectedcontent>
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+                                <option disabled selected> Tecnologia </option>
+                                <hr>
+                                <option value="javascript">JavaScript</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="react">React</option>
+                                <option value="nodejs">Node.js</option>
+                            </select>
+        
+                        </div>
+                        <div class="custom-select">
+                            <select name="location" id="location">
+                                <button>
+                                    <selectedcontent></selectedcontent>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+                                <option disabled selected>Ubicación</option>
+                                <hr>
+                                <option value="remoto">Remoto</option>
+                                <option value="cdmx">Ciudad de México</option>
+                                <option value="guadalajara">Guadalajara</option>
+                                <option value="monterrey">Monterrey</option>
+                                <option value="barcelona">Barcelona</option>
+                            </select>
+        
+                        </div>
+                        <div class="custom-select">
+                            <select name="tipo-contrato" id="tipo-contrato">
+                                <button>
+                                    <selectedcontent></selectedcontent>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+                                <option disabled selected>Tipo de contrato</option>
+                                <hr>
+                                <option value="full-time">Tiempo Completo</option>
+                                <option value="part-time">Medio Tiempo</option>
+                                <option value="contract">Contracto</option>
+                            </select>
+        
+                        </div>
+                        <div class="custom-select">
+                            <select name="level-of-experience" id="experience">
+                                <button>
+                                    <selectedcontent></selectedcontent>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+                                <option disabled selected>Nivel de experiencia</option>
+                                <hr>
+                                <option value="junior">Junior</option>
+                                <option value="mid">Mid-level</option>
+                                <option value="senior">Senior</option>
+                                <option value="lead">Lead</option>
+                            </select>
+        
+                        </div>
+                    </div>
                 </form>
             </search>
             <!-- select -->
-            <div class="custom-select-group">
-                <div class="custom-select">
-                    <select name="technology" id="technology">
-                        <button>
-                            <selectedcontent></selectedcontent>
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                        </button>
-                        <option disabled selected> Tecnologia </option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="python">Python</option>
-                        <option value="java">Java</option>
-                        <option value="react">React</option>
-                        <option value="nodejs">Node.js</option>
-                    </select>
-
-                </div>
-                <div class="custom-select">
-                    <select name="location" id="location">
-                        <button>
-                            <selectedcontent></selectedcontent>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                        </button>
-                        <option disabled selected>Ubicación</option>
-                        <option value="remoto">Remoto</option>
-                        <option value="cdmx">Ciudad de México</option>
-                        <option value="guadalajara">Guadalajara</option>
-                        <option value="monterrey">Monterrey</option>
-                        <option value="barcelona">Barcelona</option>
-                    </select>
-
-                </div>
-                <div class="custom-select">
-                    <select name="tipo-contrato" id="tipo-contrato">
-                        <button>
-                            <selectedcontent></selectedcontent>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                        </button>
-                        <option disabled selected>Tipo de contrato</option>
-                        <option value="full-time">Tiempo Completo</option>
-                        <option value="part-time">Medio Tiempo</option>
-                        <option value="contract">Contracto</option>
-                    </select>
-
-                </div>
-                <div class="custom-select">
-                    <select name="level-of-experience" id="experience">
-                        <button>
-                            <selectedcontent></selectedcontent>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                        </button>
-                        <option disabled selected>Nivel de experiencia</option>
-                        <option value="junior">Junior</option>
-                        <option value="mid">Mid-level</option>
-                        <option value="senior">Senior</option>
-                        <option value="lead">Lead</option>
-                    </select>
-
-                </div>
-            </div>
 
         </section>
         <!--section of results -->
