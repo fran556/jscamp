@@ -62,6 +62,14 @@ header {
                 outline: none;
             }
         }
+        a:nth-child(2) {
+        color: var(--primary-hover);
+        pointer-events: none;
+
+        &:active {
+            transform: scale(0.90);
+        }
+    }
     }
 
 
