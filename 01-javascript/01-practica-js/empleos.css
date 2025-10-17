@@ -63,13 +63,13 @@ header {
             }
         }
         a:nth-child(2) {
-        color: var(--primary-hover);
-        pointer-events: none;
+            color: var(--primary-hover);
+            pointer-events: none;
 
-        &:active {
-            transform: scale(0.90);
+            &:active {
+                transform: scale(0.90);
+            }
         }
-    }
     }
 
 
@@ -203,20 +203,23 @@ main>section:nth-child(1) {
     color: var(--text-primary);
 
 
-    
+
     option {
         border-radius: 6px;
         color: var(--text-primary);
         /* width: 5rem; */
     }
-    ::checkmark{
+
+    ::checkmark {
         display: none;
     }
-    &::picker-icon{
-        display:none;
+
+    &::picker-icon {
+        display: none;
 
     }
-    .icon{
+
+    .icon {
         padding-top: 5px;
     }
 }
@@ -293,7 +296,14 @@ main>section:nth-child(2) {
                 &:hover,
                 &:focus {
                     background-color: var(--primary-hover);
-                    outline: none;
+                    outline: 2px solid white;
+                    outline-offset: 2px;
+                }
+
+                &.is-applied {
+                    opacity: .5;
+                    background: #2a8f2d;
+                    pointer-events: none;
                 }
             }
         }
