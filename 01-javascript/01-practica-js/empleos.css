@@ -267,7 +267,7 @@ main>section:nth-child(2) {
                 display: flex;
                 flex-direction: column;
                 gap: 0.55rem;
-                width: 90%;
+                width: 85%;
                 border: none;
 
                 div p {
